@@ -1,1 +1,35 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="javascript:" onsubmit="return makeSearch()" class="mt-4" id="submit_on_enter">
+            <input id="refInput" type="text" data-role="input" data-prepend="Ref : ">
+
+            <input id="refAbsolutlyInTitle" type="checkbox" data-role="checkbox"
+                data-caption="Référence ABSOLUMENT dans le titre" checked>
+
+            <input id="searchOnlyNfirstProducts" type="checkbox" data-role="checkbox"
+                data-caption="Seulement les X premiers produits :" checked>
+            <input id="numberOfProducts" data-role="slider" data-hint-position="top" data-hint-always="true"
+                data-value="3" data-show-min-max="true" data-min="1" data-max="10">
+
+        </form>
+
+        <ul id="products" data-role="list" data-cls-list="unstyled-list row flex-justify-center mt-4"
+            data-cls-list-item="cell-3">
+        </ul>
+
+    </div>
+
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script type=text/javascript src="/script.js"></script>
+</body>
+
+</html>
