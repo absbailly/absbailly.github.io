@@ -24,7 +24,7 @@ function makeSearch() {
   searchOnlyNfirstProducts = document.getElementById("searchOnlyNfirstProducts").checked;
   numberOfProducts = $('#numberOfProducts').val();
 
-  url = "https://u0scnl9slg.execute-api.us-east-2.amazonaws.com/default/fournisseurs_papa"
+  url = " https://phzd41gui1.execute-api.eu-west-3.amazonaws.com/default/fournisseurs-papa"
   body = {
     "ref": ref
   }
